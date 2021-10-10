@@ -1,7 +1,14 @@
 <template>
     <!-- <div>{fullname}</div> -->
     
-    <input type="text" onkeyup={changeHandler}/>
-    <div>{fullname} is a course of {title}</div>
+  
+
+    <lightning-card  title="Two Way Data Binding">
+        <lightning-input type="text" 
+            label="Enter Course Name" 
+            onkeyup={changeHandler}>
+    </lightning-input>
+        <div>{fullname} is a course of {title}</div>       
+    </lightning-card>
 </template>
 
