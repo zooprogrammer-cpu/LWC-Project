@@ -4,11 +4,15 @@
   
 
     <lightning-card  title="Two Way Data Binding">
-        <lightning-input type="text" 
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" 
             label="Enter Course Name" 
             onkeyup={changeHandler}>
-    </lightning-input>
-        <div>{fullname} is a course of {title}</div>       
+        </lightning-input>
+                <div>{fullname} is a course of {title}</div>  
+
+        </div>
+             
     </lightning-card>
 </template>
 
