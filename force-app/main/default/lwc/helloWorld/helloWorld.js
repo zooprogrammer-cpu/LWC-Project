@@ -1,6 +1,8 @@
 import { LightningElement,track } from 'lwc'; //need to add a track here for complex objects tracking
 
 export default class HelloWorld extends LightningElement {
+    
+    // Data binding example
     fullname="Ace Course"
     title="Ligthing Web Components"
 
@@ -34,6 +36,23 @@ export default class HelloWorld extends LightningElement {
 
 
     }
+
+    //**getter example**//
+    users = ["john","smith","nik"]
+    num1 = 10
+    num2 = 20
+
+
+    get firstUser(){
+        return this.users[0]
+
+    }
+
+    get multiply(){
+        return this.num1*this.num2
+    }
+
+
 
     
 
