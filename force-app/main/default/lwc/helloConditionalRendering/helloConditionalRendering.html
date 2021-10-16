@@ -13,6 +13,14 @@
                 <div>Welcome to this course</div> 
 
             </template>
+
+            <template if:false={isVisible}>
+                <div>You can't see the data. Please click the button.</div> 
+
+            </template>
+
+
+
         </div>
     </lightning-card>
 </template>
