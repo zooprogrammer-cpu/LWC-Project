@@ -38,13 +38,13 @@ export default class HelloWorld extends LightningElement {
     }
 
     //**getter example**//
-    users = ["john","smith","nik"]
+    users = ["ash","smith","nik"]
     num1 = 10
     num2 = 20
-
+    
 
     get firstUser(){
-        return this.users[0]
+        return this.users[0].toUpperCase()
 
     }
 
